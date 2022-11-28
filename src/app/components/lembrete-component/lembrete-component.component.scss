@@ -1,0 +1,19 @@
+#app{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 10rem auto;
+  padding: 1rem;
+  background: white;
+  h1{
+    padding: 1rem;
+  }
+  button{
+    margin: 1rem;
+    width: 100%;
+  }
+  
+}

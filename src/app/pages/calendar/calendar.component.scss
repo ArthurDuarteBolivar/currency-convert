@@ -1,0 +1,50 @@
+#app{
+  background: lightblue;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 5rem;
+  span, a{
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+    border: 1px solid gray;
+  }
+  .days{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .wekends{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0.5rem 0;
+  }
+}
+
+.true{
+  background: black;
+}
+
+.false{
+  background-color: white;
+}
+#app:hover {
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+  transform: translateY(-8px);
+}

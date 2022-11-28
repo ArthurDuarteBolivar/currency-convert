@@ -1,0 +1,68 @@
+@import '../../../assets/config-scss/animations.scss';
+
+.form-group{
+  display: flex;
+  transition: 2s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border-radius: 1rem;
+  background-image: url('/assets/background/wave-haikei.svg');
+  animation: animationBackground 5s infinite alternate ease;
+  color: white;
+  box-shadow: 1rem 1rem #101010;
+}
+.form-group:hover{
+  box-shadow: none;
+}
+.input_container{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  label{
+    position: absolute;
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-top: 6.5rem;
+    transition: 2s;
+  }
+  input{
+    margin: 1rem;
+    padding: 1rem;
+    padding-left: 5rem;
+    width: 300px;
+  }
+  select{
+    margin: 1rem;
+    padding: 1rem;
+    padding-left: 5rem;
+    width: 300px;
+  }
+  input:focus + .label_coin{
+    top: 20.4rem;
+  }
+  input:focus + .label_money{
+    top: 31.7rem;
+  }
+  input:focus{
+    padding-left: 1rem;
+  }
+  span{
+    margin-left: 1.5rem;
+    position: absolute;
+    margin-top: 1rem;
+  }
+
+}
+
+
+#app{
+  margin-top: 9rem;
+  background-color: #505050;
+  width: 100vw;
+}
+
+

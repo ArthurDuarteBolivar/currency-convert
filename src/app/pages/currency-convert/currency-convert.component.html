@@ -1,0 +1,26 @@
+<div id="app">
+
+  <form [formGroup]="convert"  class="form-group">
+    <h1>Currency convert</h1>
+    <div class="input_container">
+      <span>Coin</span>
+      <select  formControlName="coinPrimary">
+        <option [value]="codeCurrency">{{codeCurrency}}</option>
+        <option [value]="codeinCurrency">{{codeinCurrency}}</option>
+      </select>
+      <input  (keyup)="onSubmit()" [value]="valueConvert1" formControlName="valuePrimary"  type="text">
+      <label class="label_coin">Money</label>
+    </div>
+    <div class="input_container ">
+      <span>Coin</span>
+      <select  formControlName="coinSecondary">
+        <option [value]="codeCurrency">{{codeCurrency}}</option>
+        <option [value]="codeinCurrency">{{codeinCurrency}}</option>
+      </select>
+      <input  (keyup)="onSubmit()" [value]="valueConvert2"  formControlName="valueSecondary" type="text">
+      <label class="label_money">Money</label>
+    </div>
+
+  </form>
+  <!-- <h1 *ngFor="let item of listCurrency">{{item}}</h1> -->
+</div>
